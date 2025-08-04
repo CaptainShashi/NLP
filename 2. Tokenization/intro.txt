@@ -1,0 +1,36 @@
+1. Word Tokenization ::
+         text is divided into individual words
+          eg ; Machine learning is fascinating" becomes  --- ["Machine", "learning", "is", "fascinating"]
+
+
+2. Character Tokenization :: 
+        The textual data is split and converted to a sequence of individual characters
+        This is beneficial for tasks that require a detailed analysis, such as spelling correction or for tasks with unclear boundaries.
+        eg ;; ["You are helpful"]  will becomes ["Y", "o", "u", " ", "a", "r", "e", " ", "h", "e", "l", "p", "f", "u", "l"]
+
+
+3. Sub-word Tokenization :: 
+         breaking down text into units that are larger than a single character but smaller than a full word
+         ["Time", "table"] 
+         ["Rain", "coat"] 
+         ["Grace", "fully"] 
+         ["Run", "way"] 
+        
+
+4. Sentence Tokenization :: 
+        division of paragraphs or large set of sentences into separated sentences as tokens.
+
+    
+5. N-gram Tokenization :: 
+        N-gram tokenization splits words into fixed-sized chunks (size = n) of data
+        Input before tokenization        :: ["Machine learning is powerful"]
+        Output when tokenized by bigrams :: [('Machine', 'learning'), ('learning', 'is'), ('is', 'powerful')]
+
+
+
+
+
+############## Limitations of Tokenization
+1.Unable to capture the meaning of the sentence hence, results in ambiguity.
+2.Chinese, Japanese, Arabic, lack distinct spaces between words. Hence, absence of clear boundaries that complicates the process of tokenization.
+3.Tough to decide how to tokenize text that may include more than one word, for example email address, URLs and special symb

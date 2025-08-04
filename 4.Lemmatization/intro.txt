@@ -1,0 +1,56 @@
+Lemmatization is an important text pre-processing technique in Natural Language Processing (NLP) that reduces words to their base form known as a "lemma.
+
+For example ::  the lemma of "running" is "run" and "better" becomes "good
+
+--> Unlike stemming which simply removes prefixes or suffixes, it considers the word's meaning and part of speech (POS) and ensures that the base form is a valid word
+
+
+################ Lemmatization is important for various reasons in NLP:
+1. Improves accuracy: It ensures words with similar meanings like "running" and "ran" are treated as the same
+2. Reduced Data Redundancy: By reducing words to their base forms, it reduces redundancy in the dataset. This leads to smaller datasets which makes it easier to handle and process large amounts of text for analysis or training machine learning models
+3. Better NLP Model Performance: By treating all similar word as same, it improves the performance of NLP models by making text more consistent. For example, treating "running," "ran" and "runs" as the same word improves the model's understanding of context and meaning
+
+
+############# Lemmatization Techniques
+1. Rule Based Lemmatization ::
+        In rule-based lemmatization, predefined rules are applied to a word to remove suffixes and get the root form
+        This approach works well for regular words but may not handle irregularities well
+        For example:
+             Rule: For regular verbs ending in "-ed," remove the "-ed" suffix.
+             Example: "walked" -> "walk"
+            
+        ** While this method is simple and interpretable, it doesn't account for irregular word forms like "better" which should be lemmatized to "good"
+
+
+2. Dictionary-Based Lemmatization ::
+        It uses a predefined dictionary or lexicon such as WordNet to look up the base form of a word
+        This method is more accurate than rule-based lemmatization because it accounts for exceptions and irregular words
+
+        For example:
+          'running' -> 'run'
+          'better' -> 'good'
+          'went' -> 'go
+        "I was running to become a better athlete and then I went home," -> "I was run to become a good athlete and then I go home."
+
+ 
+3. Machine Learning-Based Lemmatization :: 
+        It uses algorithms trained on large datasets to automatically identify the base form of words
+        This approach is highly flexible and can handle irregular words and linguistic nuances better than the rule-based and dictionary-based methods
+
+        For example:
+           A trained model may deduce that “went” corresponds to “go” even though the suffix removal rule doesn’t apply. 
+           Similarly, for 'happier' the model deduces 'happy' as the lemma
+
+        Machine learning-based lemmatizers are more adaptive and can generalize across different word forms which makes them ideal for complex tasks involving diverse vocabularies
+
+
+################### Advantages of Lemmatization with NLTK
+1. Efficient Data Processing  :: It reduces the number of unique words by grouping similar variations together. This reduction helps to process large datasets more efficiently, conserving both memory and computational resources.
+2. Enhanced Search and Retrieval :: In tasks like search and information retrieval, it improves results by making it easier to match different forms of a word like "run," "running," "ran" to the same base form increasing the relevance of search queries.
+3. Consistency in NLP Models :: Standardizing words to their base form improves the consistency of input data which enhances the performance of NLP models. With consistent data, models are more likely to make accurate predictions and understand the underlying context of the text
+
+
+################## Disadvantages of Lemmatization with NLTK
+1. Time-consuming :: takes lot of time to convert into lemmetized words
+2.Not Ideal for Real-Time Applications :: due to larger time 
+2.Risk of Ambiguity :: where a single word would be both noun and verb 

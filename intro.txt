@@ -1,0 +1,27 @@
+--> Natural Language Processing (NLP) enables computers to understand and interpret human language
+
+--> NLP bridges this gap by allowing machines to process and understand human languages, making it an essential tool in modern AI systems
+
+################## Need for Natural Language Processing
+**** By training NLP models, we can equip computers to process language data in a variety of forms, from written text to voice input
+***  NLP breaks down language understanding into smaller, manageable components. This approach, known as the NLP pipeline, 
+     involves several stages that collectively enable machines to interpret human language effective
+
+
+
+################# Key Steps in Natural Language Processing (NLP) Pipeline
+1. sentence segmentation  ::  breaking text into individual sentence
+
+2. tokenization      ::  split sentence into tokens (words/punctuations)
+
+3. predict parts of speech (POS) :: Assign POS tag for each tokens
+
+4. Lemmatization      :: convert words to their root form
+
+5. Stop word removal  :: Remove common words like 'a','and' , 'the'.........etc 
+
+6. Dependency Parsing :: Create synthatic tree and understand word relationship
+
+7. Named entry recognisation (NER) :: Identify entities (people , place , dates)
+
+8. Coreference resolution :: resolve pronoun and expression referring to the smae entity

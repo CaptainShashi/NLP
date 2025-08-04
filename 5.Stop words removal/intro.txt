@@ -1,0 +1,19 @@
+---> Natural language processing tasks often involve filtering out commonly occurring words that provide no or very little semantic value to text analysis
+---> These words are known as stopwords include articles, prepositions and pronouns like "the", "and", "is" and "in." 
+        
+        Consider the sentence: "The quick brown fox jumps over the lazy dog"
+             Stopwords: "the" and "over"
+             Content words: "quick", "brown", "fox", "jumps", "lazy", "dog"
+--> It becomes particularly important when dealing with large text corpora where computational efficiency matters
+--> Processing every single word including high-frequency stopwords can consume unnecessary resources and potentially skew analysis results
+
+
+################# Categories of Stopwords
+1. Standard Stopwords ;: Common function words like articles ("a", "the"), conjunctions ("and", "but") and prepositions ("in", "on")
+2. Domain-Specific Stopwords: Context-dependent terms that appear frequently in specific fields like "patient" in medical texts
+3. Contextual Stopwords: Words with extremely high frequency in particular datasets
+4. Numerical Stopwords: Digits, punctuation marks and single characters
+
+
+nltk ----------> text Preprocessing ------------>stop words removal
+            ( convert sentence to lower case )

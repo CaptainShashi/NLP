@@ -1,0 +1,16 @@
+---> Dependency parsing is a technique used in syntactic analysis of sentences to find grammatical relationships between words
+---> Instead of breaking the sentence into phrases (like constituency parsing), it directly connects words based on their relationships
+--> Each word is connected to another word (called its head) with a labeled arc indicating the type of relationship (dependency)
+--> The structure forms a directed tree, usually rooted at the main verb.
+
+Example:
+Sentence:
+
+"The quick brown fox jumps over the lazy dog."
+
+Dependencies:
+    "fox" → subject (nsubj) of "jumps"
+    "jumps" → root
+    "over" → preposition attached to "jumps"
+    "dog" → object of the preposition "over"
+

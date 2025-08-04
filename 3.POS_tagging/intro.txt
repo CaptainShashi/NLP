@@ -1,0 +1,67 @@
+--> It gives each word a grammatical category such as nouns, verbs, adjectives and adverbs
+--> This technique makes it possible for machines to study human language more accurately
+--> PoS tagging is essential in many NLP applications like machine translation, sentiment analysis and information retrieval
+
+
+############### Example of POS Tagging
+Consider the sentence: "The quick brown fox jumps over the lazy dog."
+
+After performing POS Tagging:
+
+"The" is tagged as determiner (DT)
+"quick" is tagged as adjective (JJ)
+"brown" is tagged as adjective (JJ)
+"fox" is tagged as noun (NN)
+"jumps" is tagged as verb (VBZ)
+"over" is tagged as preposition (IN)
+"the" is tagged as determiner (DT)
+"lazy" is tagged as adjective (JJ)
+"dog" is tagged as noun (NN)
+
+
+################# Workflow of POS Tagging in NLP
+1. Tokenization ::
+2. Loading a Language Model: like downloading dataset from Model using spacy,NLTK
+3. Text Preprocessing ::  The text is then cleaned to improve accuracy. Common preprocessing steps include 
+                          converting text to lowercase, removing xspecial characters and eliminating irrelevant content
+
+4. Linguistic Analysis: This stage involves parsing the sentence to understand the grammatical role of each token
+
+5. POS Tagging: Each token is then assigned a specific part-of-speech label. This is based on its role in the sentence and contextual clues provided by surrounding words.
+6. Result Evaluation: Finally, the POS-tagged output is reviewed to ensure accuracy. Any misclassifications or anomalies are identified and corrected as needed.
+
+
+
+################### Types of POS Tagging in NLP
+1. Rule-Based Tagging  :: 
+          --> assigns grammatical tags to words using a predefined set of rules, as opposed to machine learning-based methods that require training on annotated corpora
+          Example
+
+        a rule might specify that words ending in “-tion” or “-ment” should be tagged as nouns, based on common suffix patterns found in English.
+
+        Rule :: Assign the POS tag "Noun" to words ending in -tion or -ment.
+        Text :: "The presentation highlighted the key achievements of the project's development."
+        Tagged Output:
+
+         "The" : Determiner (DET)
+         "presentation" : Noun (N)
+         "highlighted" : Verb (V)
+         "the" : Determiner (DET)
+         "key" : Adjective (ADJ)
+         "achievements" : Noun (N)
+         "of" : Preposition (PREP)
+         "the" : Determiner (DET)
+         "project's" : Noun (N)
+         "development" : Noun (N)
+
+
+2. Transformation Based tagging :: 
+--> Transformation-Based Tagging (TBT) is a method for refining POS tags through a series of context-based transformations.
+     Example
+
+        a rule might state: “Change a word’s tag from Verb to Noun if it follows a determiner like ‘the’.”
+ 
+        Text     :: "The cat chased the mouse."
+        Initial Tags :: "The" – DET, "cat" – N, "chased" – V, "the" – DET, "mouse" – N
+        Transformation Rule Applied: Change “chased” from Verb to Noun because it follows “the”.
+        Updated Tags: "chased" becomes Noun.

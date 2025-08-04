@@ -1,0 +1,62 @@
+---> Named Entity Recognition (NER) in NLP focuses on identifying and categorizing important information known as entities in text
+---> These entities can be names of people, places, organizations, dates, etc
+---> It helps in transforming unstructured text into structured information which helps in tasks like text summarization, knowledge graph creation and question answering.
+
+
+###################### Understanding Named Entity Recognition
+---> NER helps in detecting specific information and sort it into predefined categories.
+---> It plays an important role in enhancing other NLP tasks like part-of-speech tagging and parsing.
+
+Examples of Common Entity Types:
+
+Person Names: Albert Einstein
+Organizations: GeeksforGeeks
+Locations: Paris
+Dates and Times: 5th May 2025
+Quantities and Percentages: 50%, $100
+
+---> It helps in handling ambiguity by analyzing surrounding words, structure of sentence and the overall context to make the correct classification
+---> It means context can change based on entity’s meaning.
+
+Example 1:
+
+    Amazon is expanding rapidly (Organization)
+    The Amazon is the largest rainforest (Location)
+
+Example 2:
+
+    Jordan won the MVP award (Person)
+    Jordan is a country in the Middle East (Location)
+
+
+
+#################### Working of Named Entity Recognition (NER)
+1. Analyzing the Text: It processes entire text to locate words or phrases that could represent entities
+2. Finding Sentence Boundaries: It identifies starting and ending of sentences using punctuation and capitalization which helps in maintaining meaning and context of entities
+3. Tokenizing and Part-of-Speech Tagging: Text is broken into tokens (words) and each token is tagged with its grammatical role which provides important clues for identifying entities
+4. Entity Detection and Classification: Tokens or groups of tokens that match patterns of known entities are recognized and classified into predefined categories like Person, Organization, Location etc
+5. Model Training and Refinement: Machine learning models are trained using labeled datasets and they improve over time by learning patterns and relationships between words
+6. Adapting to New Contexts: A well-trained model can generalize to different languages, styles and unseen types of entities by learning from context
+
+
+
+################# Methods of Named Entity Recognition
+1. Lexicon Based Method ::
+        --> This method uses a dictionary of known entity names
+        --> This process involves checking if any of these words are present in a given text
+        --> However, this approach isn't commonly used because it requires constant updating and careful maintenance of the dictionary to stay accurate and effective
+
+2. Rule Based Method ::
+        --> It uses a set of predefined rules which helps in extraction of information.
+        --> These rules are based on patterns and context
+        --> Pattern-based rules focus on the structure and form of words helps in looking at their morphological patterns
+        --> context-based rules focus on the surrounding words or the context in which a word appears within the text document
+
+3. Machine Learning-Based Method ::
+        --> Multi-Class Classification     :: Trains model on labeled examples where each entity is categorized. In addition to labelling model also requires a deep understanding of context which makes it a challenging task for a simple machine learning algorithm.
+        --> Conditional Random Field (CRF) :: It is implemented by both NLP Speech Tagger and NLTK. It is a probabilistic model that understands the sequence and context of words which helps in making entity prediction more accurate
+
+4. Deep Learning Based Method
+        --> Word Embeddings: Captures the meaning of words in context.
+        --> Automatic Learning: Deep models learn complex patterns without manual feature engineering.
+        --> Higher Accuracy: Performs well on large varied datasets

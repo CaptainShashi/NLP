@@ -1,0 +1,22 @@
+** It simplifies words by reducing them to their root forms, a process known as "stemming."
+** For example, the words "running," "runner," and "ran" can all be reduced to their root form, "run
+
+
+############ How the Porter Stemmer Works
+The Porter Stemmer works by applying a series of rules to remove suffixes from words in five steps ::
+** It identifies and strips common endings, reducing words to their base forms (stems)
+
+
+
+############ Key Features & Benefits of Porter Stemmer
+--> The algorithm takes off common endings like "-ing," "-ed," and "-ly," changing "running" to "run" and "happily" to "happi.
+--> It processes text quickly, which is useful for handling large amounts of data
+--> By simplifying words to their base forms, it reduces the number of unique words in a dataset, making analysis easier
+
+
+
+############ Limitations of Porter Stemmer
+--> It can produce stems that are not meaningful, such as turning "iteration" into "iter."
+--> The algorithm is primarily designed for English and may not work well with other languages
+--> Compared to other stemmers , it may remove suffixes more aggressively, making words more similar to each other
+--> Different words may be reduced to the same stem, resulting in a loss of meaning
