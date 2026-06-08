@@ -41,7 +41,3 @@ Natural Language Processing enables computers to understand and interpret human 
 - This repository is intended as a learning resource and practical guide.
 - The notebooks include examples of NLP concepts and common preprocessing techniques.
 - Some modules may use Python NLP libraries such as NLTK or spaCy (check the notebooks for exact dependencies).
-
-## License
-
-Feel free to use and adapt this repository for learning and teaching NLP concepts.
